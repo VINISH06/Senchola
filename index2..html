@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico" />
+<style>
+       * {
+        padding: 0%;
+        margin: 0%;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+    form{
+        background-color:rgb(0, 128, 0,0.8);
+     width: 475px;
+       padding: 20px;
+       border-radius: 12px;
+       margin-top: 100px;
+    }
+   form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+
+   }
+   .gen{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+   }
+    header {
+        display: flex;
+        background-color: rgb(0, 0, 0, 0.5);
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      footer {
+        background-color: rgb(0, 0, 0, 0.5);
+        padding: 1%;
+      }
+      h2 {
+        margin: 10px;
+      }
+      
+      h4 {
+        margin: 10px;
+      }
+      header ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 300px;
+        list-style: none;
+      }
+      header ul a {
+        text-decoration: none;
+        color: black;
+      }
+</style>
+    <title>Registration-Form</title>
+  </head>
+<header>
+      <div class="head"><h1>Welcome to Our University</h1></div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        
+      
+
+        </ul>
+      </nav>
+    </header>
+      <body>
+        <center>
+          <fieldset>
+            <legend><h1>Registration Form:</h1></legend>
+            <form action="" method="POST">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required placeholder="Enter Name" />
+              <br /><br />
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required placeholder="Enter Password" />
+              <br /><br />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required  placeholder="Example@gmail.com"/>
+              <br /><br />
+
+              <label for="birthdate">Date of Birth:</label>
+              <input type="date" id="birthdate" name="birthdate" required />
+              <br /><br />
+<div class="gen">
+              <label>Gender:</label>
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="Other" />
+              <label for="other">Other</label></div>
+              <br /><br />
+
+              <label for="country">Country:</label>
+              <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="India">India</option>
+                <option value="uk">United Kingdom</option>
+                <option value="other">Other</option>
+              </select>
+              <br /><br />
+<div class="gen1"> <label for="profile-pic">Profile  Picture :</label>
+              <input type="file" id="profile-pic" name="profile-pic" /></div>
+             
+              <br /><br />
+
+              <label for="Address">Address:</label><br />
+              <textarea
+                id="Address"
+                name="Address"
+                rows="4"
+                cols="25"
+              ></textarea>
+              <br /><br />
+              <!-- Checkbox -->
+<div class="gen"><input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                value="Yes"
+              /><label for="subscribe">Agree Terms&Conditions</label></div>
+              
+              <br /><br />
+              <!-- Submit Button -->
+              <input type="submit" value="Register" />
+            </form>
+          </fieldset>
+          <footer>
+            <p>&copy; 2023 www.University.com. All Rights Reserved.</p>
+          </footer>
+        </center>
+      </body>
+    </html>
+  </body>
+</html>
