@@ -22,36 +22,118 @@
 body {
     width: 100%;
     height: 100vh;
+    font-size: var(--font-size);
 
 }
 
-
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
-    padding: 20px;
+section {
+    width: var(--width);
+    height: var(--height);
 }
 
-.nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-
-}
-
-.nav ul li {
-    margin-right: 20px;
-}
-
-#Landing {
-    background: url();
-    height: 100vh;
-    width: 100%;
+.backk {
+    background: url(./img/fresh-coffee-steams-wooden-table-close-up-generative-ai.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(227, 227, 227);
+    flex-direction: column;
 
+}
+
+
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transition: -Webkit-transform 1s;
+}
+
+.img:hover {
+    -webkit-transform: rotate(360deg) translatez(0);
+}
+
+header {
+    width: 100%;
+    background-color: RGB(79, 44, 24);
+    color: white;
+    padding: 20px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+
+}
+
+
+
+.content {
+    width: 50%;
+
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    cursor: pointer;
+}
+
+nav li:hover {
+    border-bottom: 4px solid blueviolet;
+    color: blueviolet;
+    transition: 0.5s;
+    font-size: 30px;
+
+
+}
+
+.btn {
+    padding: 5%;
+
+}
+
+.btn button {
+    width: 400px;
+    padding: 2%;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: blueviolet;
+    outline: none;
+    font-size: 30px;
+    margin: 20px;
+
+}
+
+.btn button:hover {
+    color: black;
+    background-color: green;
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 0.5s;
 
 }
